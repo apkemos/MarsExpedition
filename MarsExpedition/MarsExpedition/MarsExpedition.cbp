@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MarsExpedition" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/MarsExpedition" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="C:/SFML-2.1/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-static-libgcc" />
+					<Add option="-static-libstdc++" />
+					<Add option="-std=c++11" />
+					<Add library="sfml-graphics-s-d" />
+					<Add library="sfml-window-s-d" />
+					<Add library="sfml-system-s-d" />
+					<Add directory="C:/SFML-2.1/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/MarsExpedition" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="C:/SFML-2.1/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libgcc" />
+					<Add option="-static-libstdc++" />
+					<Add option="-std=c++11" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add directory="C:/SFML-2.1/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="C:/SFML-2.1/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-static-libgcc" />
+			<Add option="-static-libstdc++" />
+			<Add option="-std=c++11" />
+			<Add library="sfml-graphics-s" />
+			<Add library="sfml-window-s" />
+			<Add library="sfml-system-s" />
+			<Add directory="C:/SFML-2.1/lib" />
+		</Linker>
+		<Unit filename="Base.cpp" />
+		<Unit filename="Base.h" />
+		<Unit filename="Flag.cpp" />
+		<Unit filename="Flag.h" />
+		<Unit filename="MainMenu.cpp" />
+		<Unit filename="MainMenu.h" />
+		<Unit filename="Map.cpp" />
+		<Unit filename="Map.h" />
+		<Unit filename="Mars.cpp" />
+		<Unit filename="R_Analyzer.cpp" />
+		<Unit filename="R_Analyzer.h" />
+		<Unit filename="R_Explorer.cpp" />
+		<Unit filename="R_Explorer.h" />
+		<Unit filename="R_Rescuer.cpp" />
+		<Unit filename="R_Rescuer.h" />
+		<Unit filename="Sim.cpp" />
+		<Unit filename="Sim.h" />
+		<Unit filename="SimObjectManager.cpp" />
+		<Unit filename="SimObjectManager.h" />
+		<Unit filename="Splashscreen.cpp" />
+		<Unit filename="Splashscreen.h" />
+		<Unit filename="Stdafx.h" />
+		<Unit filename="Vehicle.cpp" />
+		<Unit filename="Vehicle.h" />
+		<Unit filename="VisibleSimObject.cpp" />
+		<Unit filename="VisibleSimObject.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
